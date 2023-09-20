@@ -1,0 +1,298 @@
+/* font face */
+
+/* font source-sans-pro black*/
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* font source-sans-pro regular*/
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font source-sans-pro black italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BlackIt.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* font source-sans-pro bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* font source-sans-pro bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* font source-sans-pro extra light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLight.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* font source-sans-pro extra light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLightIt.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* font source-sans-pro italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font source-sans-pro light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* font source-sans-pro light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-LightIt.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* font source-sans-pro semi bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* font source-sans-pro semi bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-SemiboldIt.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Variables */
+:root {
+
+    --color-dark-grey: #071629;
+    --color-pink: #FF6565;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-grey: #D8D8D8;
+
+    --font-family-base: 'Source Sans Pro';
+    --font-align: center;
+    --font-style: normal;
+
+    /* Header */
+
+
+    /* Menu */
+    --menu-hover: #FF6565;
+    --menu-font-size: 0.75rem;
+    --menu-font-weight: 700;
+
+    /* Main */
+    --main-text-color: var(--color-white);
+
+    /* Main Text Heading */
+    --main-text-heading-font-size: 2rem;
+    --main-text-heading-font-weight: 700;
+
+    /* Main Text Sub-heading */
+    --main-text-subheading-font-size: 1rem;
+    --main-text-subheading-font-weight: 700;
+
+    /* Main Text Para */
+    --main-text-para-font-size: 1rem;
+    --main-text-para-font-weight: 400;
+    --main-text-para-line-height: 1.625rem;
+
+    /* Buttons */
+    --button-hover-opacity: 0.9;
+    --button-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    --button-border-radius: 1.375rem;
+    --button-text-font-size: 0.875rem;
+    --button-text-font-weight: 700;
+
+    /* Part 2 - What we do */
+    --what-background: var(--color-white)
+    --what-text-color: #071629;
+    --what-text-heading-font-size: 2rem;
+    --what-text-heading-font-weight: 600;
+    --what-text-para-font-size: 1rem;
+    --what-text-para-font-weight: 400;
+    --what-text-para-line-height: 1.625rem;
+
+    /* part 2 - Icon */
+    --part2-icon-text-para-font-size: 0.875rem;
+    --part2-icon-text-para-font-weight: 400;
+    --part2-icon-text-head-font-size: 1.125rem;
+    --part2-icon-text-head-font-weight: 600;
+  
+    /* Part 3 - Our Result */
+    --result-color: var(--color-white);
+    --result-text-heading-font-size: 2rem;
+    --result-text-heading-font-weight: 600;
+    --result-text-para-font-size: 1rem;
+    --result-text-para-font-weight: 400;
+    --result-text-para-line-height: 1.625rem;
+    --result-polygon-text-font-size: 0.875rem;
+    --result-polygon-text-font-weight: 400;
+    --result-polygon-text-2-font-size: 2.875rem;
+    --result-polygon-text-2-font-weight: 700;
+    
+    /* Part 4 - Contact Us */
+    --contact-width: 20.9375rem;
+    --contact-color: #071629;
+    --contact-background: var(--color-white);
+    --contact-heading-font-size: 2rem;
+    --contact-heading-font-weight: 600;
+    --contact-input-text-font-size: 0.875rem;
+    --contact-input-text-font-weight: 600;
+    --contact-input-width: 20.9375rem;
+    --contact-input-height: 0.0625rem;
+    --contact-input-opacity: 0.1745;
+    --contact-input-background: #071629;
+
+    /* Part 5 - Footer */
+    --footer-background: var(--color-dark-grey);
+    --footer-color: var(--color-white);
+    --footer-text-font-size: 0.75rem;
+    --footer-text-font-weight: 400;
+    --footer-text-opacity: 0.3517;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'source-sans-pro';
+    max-width: 1000px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: var(--font-align);
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: right 67% bottom 60px;
+    background-repeat: no-repeat;
+    background-color: #071629;
+    width: 100%;
+    color: var(--color-white);
+    padding-bottom: 7rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--color-white);
+    margin-left: 2rem;
+}
+
+nav {
+    display: none;
+}
+
+h1 {
+    font-size: var(--main-text-heading-font-size);
+    font-weight: var(--main-text-heading-font-weight);
+    margin-top: 18rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-sub {
+    font-size: var(--main-text-subheading-font-size);
+    font-weight: var(--main-text-subheading-font-weight);
+    margin: 0 3rem;
+}
+
+.banner-para {
+    font-size: var(--main-text-para-font-size);
+    font-weight: var(--main-text-para-font-weight);
+    line-height: var(--main-text-para-line-height);
+    margin: 0rem 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    background-color: var(--color-pink);
+    border: none;
+    border-radius: var(--button-border-radius);
+    color: var(--color-white);
+    font-size: var(--button-text-font-size);
+    font-weight: var(--button-text-font-weight);
+    box-shadow: var(--button-box-shadow);
+    opacity: var(--button-hover-opacity);
+    padding: 0.8rem 2rem;
+}
+
+
+/* Desktop media queries */
+@media (min-width: 767px) {
+    body {
+        /* background-color: #FF6565; */
+    }
+}
+
+/* Tablet media queries */
+@media (min-width: 374px) and (max-width: 768px) {
+    body {
+        /* background-color: #000; */
+        width: 100%;
+    }
+
+    nav {
+        display: inline-flex;
+        padding-top: 0.8rem;
+    }
+    .part1 {
+        padding: 10rem 4rem;
+    }
+}
