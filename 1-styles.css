@@ -150,7 +150,7 @@
     --button-text-font-weight: 700;
 
     /* Part 2 - What we do */
-    --what-background: var(--color-white)
+    --what-background: var(--color-white);
     --what-text-color: #071629;
     --what-text-heading-font-size: 2rem;
     --what-text-heading-font-weight: 600;
@@ -206,7 +206,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     font-family: 'source-sans-pro';
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 
 .banner {
@@ -239,7 +239,11 @@ nav {
     display: none;
 }
 
-h1 {
+.part1 {
+    padding: 0px 5vw;
+}
+
+.banner-head {
     font-size: var(--main-text-heading-font-size);
     font-weight: var(--main-text-heading-font-weight);
     margin-top: 18rem;
@@ -249,7 +253,7 @@ h1 {
 .banner-sub {
     font-size: var(--main-text-subheading-font-size);
     font-weight: var(--main-text-subheading-font-weight);
-    margin: 0 3rem;
+    margin: 0 2rem;
 }
 
 .banner-para {
@@ -259,9 +263,12 @@ h1 {
     margin: 0rem 1rem;
 }
 
-button {
+.first-but {
     margin-top: 1rem;
     margin-bottom: 4rem;
+}
+
+button {
     background-color: var(--color-pink);
     border: none;
     border-radius: var(--button-border-radius);
@@ -273,26 +280,151 @@ button {
     padding: 0.8rem 2rem;
 }
 
+.part2 {
+    background: var(--what-background);
+    color: var(--what-text-color);
+    display: flex;
+    flex-direction: column;
+    text-align: var(--font-align);
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+.what {
+    font-size: var(--what-text-heading-font-size);
+    font-weight: var(--what-text-heading-font-weight);
+}
+
+.part2>p {
+    font-size: var(--what-text-para-font-size);
+    font-weight: var(--what-text-para-font-weight);
+    line-height: var(--what-text-para-line-height);
+    padding-bottom: 0px;
+}
+
+.icons {
+    padding: 0rem 3rem;
+}
+
+.icon {
+    padding-top: 5rem;
+}
+
+.icon-th{
+    font-size: var(--part2-icon-text-head-font-size);
+    font-weight: var(--part2-icon-text-head-font-weight);
+}
+
+.icon-tp {
+    font-size: var(--part2-icon-text-para-font-size);
+    font-weight: var(--part2-icon-text-para-font-weight);
+}
+
 
 /* Desktop media queries */
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     body {
-        /* background-color: #FF6565; */
+        /* background-size: cover; */
+    }
+
+    .banner {
+        background-position: center center;
+    }
+
+    header {
+        margin: 1rem 10rem;
+    }
+
+    nav {
+        display: inline-flex;
+        margin-top: 0.5rem;
+    }
+
+    .part1 {
+        margin: 0px 25vw;
+    }
+
+    .banner-head {
+        margin-top: 20rem;
+    }
+
+    .banner-para {
+        /* padding: 0rem 18vw; */
+    }
+
+    .first-but {
+        margin-top: 3rem;
+    }
+
+    .part2>p {
+        padding: 0rem 20vw;
+    }
+
+    .part2 {
+        padding: 7rem 7vw;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .icon-hold {
+        padding: 0rem 3vw;
     }
 }
 
 /* Tablet media queries */
 @media (min-width: 374px) and (max-width: 768px) {
     body {
-        /* background-color: #000; */
-        width: 100%;
+        /* width: 100%; */
+    }
+
+    .banner {
+        padding-bottom: 5rem;
+        background-position: left 58% bottom 0px;
+    }
+
+    
+    header {
+        margin: 1rem 3rem;
+    }
+
+    .banner-head {
+        margin: 0px;
+        margin-top: 17rem;
+    }
+
+    .first-but {
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .part1 {
+        padding: 0px 5vw;
     }
 
     nav {
         display: inline-flex;
-        padding-top: 0.8rem;
+        margin-top: 0.5rem;
     }
-    .part1 {
-        padding: 10rem 4rem;
+
+    .part2 {
+        padding: 5rem 4rem;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .icon-hold {
+        padding: 0px 6vw;
+    }
+
+    .icon {
+        padding-top: 5rem;
     }
 }
