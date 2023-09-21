@@ -209,6 +209,8 @@ body {
     /* max-width: 1000px; */
 }
 
+/* Banner Section ============================*/
+
 .banner {
     display: flex;
     flex-direction: column;
@@ -280,6 +282,8 @@ button {
     padding: 0.8rem 2rem;
 }
 
+/* What We Do Section ====================*/
+
 .part2 {
     background: var(--what-background);
     color: var(--what-text-color);
@@ -327,6 +331,7 @@ button {
         /* background-size: cover; */
     }
 
+    /* Banner Section =======================*/
     .banner {
         background-position: center center;
     }
@@ -356,6 +361,7 @@ button {
         margin-top: 3rem;
     }
 
+    /* What We Do Section =====================*/
     .part2>p {
         padding: 0rem 20vw;
     }
@@ -379,12 +385,12 @@ button {
         /* width: 100%; */
     }
 
+    /* Banner Section ======================*/
     .banner {
         padding-bottom: 5rem;
         background-position: left 58% bottom 0px;
     }
 
-    
     header {
         margin: 1rem 3rem;
     }
@@ -407,6 +413,8 @@ button {
         display: inline-flex;
         margin-top: 0.5rem;
     }
+
+    /* What we Do Section ===================*/
 
     .part2 {
         padding: 5rem 4rem;
