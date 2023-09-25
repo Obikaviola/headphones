@@ -388,6 +388,47 @@ button {
     font-weight: var(--result-polygon-text-font-weight);
 }
 
+/* Contact Us ==================================== */
+.part4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--contact-background);
+    color: var(--contact-color);
+}
+
+.part4 h2 {
+    font-size: var(--contact-heading-font-size);
+    font-weight: var(--contact-heading-font-weight);
+    text-align: center;
+}
+
+label {
+    font-size: var(--contact-input-text-font-size);
+    font-weight: var(--contact-input-text-font-weight);
+    margin-bottom: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.form-item {
+    padding: 2rem 0rem 0.5rem;
+    border-bottom: 2px solid rgb(7, 22, 41, 0.1745);
+}
+
+.contact-button {
+    margin-top: 3rem;
+    margin: 3rem 20vw;
+}
+
+input {
+    border: none;
+}
+
 /* Desktop media queries */
 @media (min-width: 769px) {
     body {
@@ -460,6 +501,15 @@ button {
 
     .pent-parent {
         margin: 2rem 2vw;
+    }
+
+    /* Contact Us ==================== */
+    .form {
+        width: var(--contact-input-width);
+    }
+
+    .contact-button {
+        margin: 3rem 4.5rem;
     }
 }
 
@@ -543,5 +593,14 @@ button {
 
     .pent-parent {
         margin: 2rem 2vw;
+    }
+
+    /* Contact Us =================== */
+    .form {
+        width: var(--contact-input-width);
+    }
+
+    .contact-button {
+        margin: 3rem 4.5rem;
     }
 }
