@@ -1,0 +1,661 @@
+/* font face */
+
+/* font source-sans-pro black*/
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* font source-sans-pro regular*/
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font source-sans-pro black italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BlackIt.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* font source-sans-pro bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* font source-sans-pro bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* font source-sans-pro extra light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLight.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* font source-sans-pro extra light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLightIt.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* font source-sans-pro italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font source-sans-pro light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* font source-sans-pro light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-LightIt.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* font source-sans-pro semi bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* font source-sans-pro semi bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-SemiboldIt.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Variables */
+:root {
+
+    --color-dark-grey: #071629;
+    --color-pink: #FF6565;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-grey: #D8D8D8;
+
+    --font-family-base: 'Source Sans Pro';
+    --font-align: center;
+    --font-style: normal;
+
+    /* Header */
+
+
+    /* Menu */
+    --menu-hover: #FF6565;
+    --menu-font-size: 0.75rem;
+    --menu-font-weight: 700;
+
+    /* Main */
+    --main-text-color: var(--color-white);
+
+    /* Main Text Heading */
+    --main-text-heading-font-size: 2rem;
+    --main-text-heading-font-weight: 700;
+
+    /* Main Text Sub-heading */
+    --main-text-subheading-font-size: 1rem;
+    --main-text-subheading-font-weight: 700;
+
+    /* Main Text Para */
+    --main-text-para-font-size: 1rem;
+    --main-text-para-font-weight: 400;
+    --main-text-para-line-height: 1.625rem;
+
+    /* Buttons */
+    --button-hover-opacity: 0.9;
+    --button-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    --button-border-radius: 1.375rem;
+    --button-text-font-size: 0.875rem;
+    --button-text-font-weight: 700;
+
+    /* Part 2 - What we do */
+    --what-background: var(--color-white);
+    --what-text-color: #071629;
+    --what-text-heading-font-size: 2rem;
+    --what-text-heading-font-weight: 600;
+    --what-text-para-font-size: 1rem;
+    --what-text-para-font-weight: 400;
+    --what-text-para-line-height: 1.625rem;
+
+    /* part 2 - Icon */
+    --part2-icon-text-para-font-size: 0.875rem;
+    --part2-icon-text-para-font-weight: 400;
+    --part2-icon-text-head-font-size: 1.125rem;
+    --part2-icon-text-head-font-weight: 600;
+  
+    /* Part 3 - Our Result */
+    --result-color: var(--color-white);
+    --result-text-heading-font-size: 2rem;
+    --result-text-heading-font-weight: 600;
+    --result-text-para-font-size: 1rem;
+    --result-text-para-font-weight: 400;
+    --result-text-para-line-height: 1.625rem;
+    --result-polygon-text-font-size: 0.875rem;
+    --result-polygon-text-font-weight: 400;
+    --result-polygon-text-2-font-size: 2.875rem;
+    --result-polygon-text-2-font-weight: 700;
+    
+    /* Part 4 - Contact Us */
+    --contact-width: 20.9375rem;
+    --contact-color: #071629;
+    --contact-background: var(--color-white);
+    --contact-heading-font-size: 2rem;
+    --contact-heading-font-weight: 600;
+    --contact-input-text-font-size: 0.875rem;
+    --contact-input-text-font-weight: 600;
+    --contact-input-width: 20.9375rem;
+    --contact-input-height: 0.0625rem;
+    --contact-input-opacity: 0.1745;
+    --contact-input-background: #071629;
+
+    /* Part 5 - Footer */
+    --footer-background: var(--color-dark-grey);
+    --footer-color: var(--color-white);
+    --footer-text-font-size: 0.75rem;
+    --footer-text-font-weight: 400;
+    --footer-text-opacity: 0.3517;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'source-sans-pro';
+    /* max-width: 1000px; */
+}
+
+/* Banner Section ============================*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: var(--font-align);
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: right 67% bottom 60px;
+    background-repeat: no-repeat;
+    background-color: #071629;
+    width: 100%;
+    color: var(--color-white);
+    padding-bottom: 7rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--color-white);
+    margin-left: 2rem;
+}
+
+nav {
+    display: none;
+}
+
+.part1 {
+    padding: 0px 5vw;
+}
+
+.banner-head {
+    font-size: var(--main-text-heading-font-size);
+    font-weight: var(--main-text-heading-font-weight);
+    margin-top: 18rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-sub {
+    font-size: var(--main-text-subheading-font-size);
+    font-weight: var(--main-text-subheading-font-weight);
+    margin: 0 2rem;
+}
+
+.banner-para {
+    font-size: var(--main-text-para-font-size);
+    font-weight: var(--main-text-para-font-weight);
+    line-height: var(--main-text-para-line-height);
+    margin: 0rem 1rem;
+}
+
+.first-but {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+button {
+    background-color: var(--color-pink);
+    border: none;
+    border-radius: var(--button-border-radius);
+    color: var(--color-white);
+    font-size: var(--button-text-font-size);
+    font-weight: var(--button-text-font-weight);
+    box-shadow: var(--button-box-shadow);
+    opacity: var(--button-hover-opacity);
+    padding: 0.8rem 2rem;
+}
+
+/* What We Do Section ====================*/
+
+.part2 {
+    background: var(--what-background);
+    color: var(--what-text-color);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: var(--font-align);
+    justify-content: space-around;
+    padding: 5rem 2rem;
+}
+
+.what {
+    font-size: var(--what-text-heading-font-size);
+    font-weight: var(--what-text-heading-font-weight);
+}
+
+.part2>p {
+    font-size: var(--what-text-para-font-size);
+    font-weight: var(--what-text-para-font-weight);
+    line-height: var(--what-text-para-line-height);
+    padding-bottom: 0px;
+}
+
+.icons {
+    padding: 0rem 3rem;
+}
+
+.icon {
+    padding-top: 5rem;
+}
+
+.icon-th{
+    font-size: var(--part2-icon-text-head-font-size);
+    font-weight: var(--part2-icon-text-head-font-weight);
+}
+
+.icon-tp {
+    font-size: var(--part2-icon-text-para-font-size);
+    font-weight: var(--part2-icon-text-para-font-weight);
+}
+
+/* Our Results Section ======================*/
+
+.part3 {
+    background-size: 100vh;
+    background-image: linear-gradient(#10192978, #071629);
+    background: url(images/headphones_hero_2.jpg);
+    background-color: #071629;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: left 50% top 0px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: var(--font-align);
+    padding: 7rem 10vw 5rem;
+}
+
+.result-head {
+    font-size: var(--result-text-heading-font-size);
+    font-weight: var(--result-text-heading-font-weight);
+    margin: 0px 1vw;
+}
+
+.part3>p {
+    font-size: var(--result-text-para-font-size);
+    font-weight: var(--result-text-para-font-weight);
+    line-height: var(--result-text-para-line-height);
+    margin-top: 3rem;
+}
+
+.pent-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 4rem;
+}
+
+.pent {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+}
+
+.pent-thold {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    line-height: 0.5rem;
+}
+
+.pent-th {
+    font-size: var(--result-polygon-text-2-font-size);
+    font-weight: var(--result-polygon-text-2-font-weight);
+}
+
+.pent-tp {
+    font-size: var(--result-polygon-text-font-size);
+    font-weight: var(--result-polygon-text-font-weight);
+}
+
+/* Contact Us ==================================== */
+.part4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--contact-background);
+    color: var(--contact-color);
+}
+
+.part4 h2 {
+    font-size: var(--contact-heading-font-size);
+    font-weight: var(--contact-heading-font-weight);
+    text-align: center;
+}
+
+label {
+    font-size: var(--contact-input-text-font-size);
+    font-weight: var(--contact-input-text-font-weight);
+    margin-bottom: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.form-item {
+    padding: 2rem 0rem 0.5rem;
+    border-bottom: 2px solid rgb(7, 22, 41, 0.1745);
+}
+
+.contact-button {
+    margin-top: 3rem;
+    margin: 3rem 20vw;
+}
+
+input {
+    border: none;
+}
+
+/* Footer ================================ */
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>p {
+    font-size: var(--footer-text-font-size);
+    font-weight: var(--footer-text-font-weight);
+    opacity: var(--footer-text-opacity);
+}
+
+.footer-item {
+    padding-top: 3rem;
+}
+
+/* Desktop media queries */
+@media (min-width: 769px) {
+    body {
+        /* background-size: cover; */
+    }
+
+    /* Banner Section =======================*/
+    .banner {
+        background-position: center center;
+    }
+
+    header {
+        margin: 1rem 10rem;
+    }
+
+    nav {
+        display: inline-flex;
+        margin-top: 0.5rem;
+    }
+
+    .part1 {
+        margin: 0px 25vw;
+    }
+
+    .banner-head {
+        margin-top: 20rem;
+    }
+
+    .banner-para {
+        /* padding: 0rem 18vw; */
+    }
+
+    .first-but {
+        margin-top: 3rem;
+    }
+
+    /* What We Do Section =====================*/
+    .part2>p {
+        padding: 0rem 20vw;
+    }
+
+    .part2 {
+        padding: 7rem 7vw;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .icon-hold {
+        padding: 0rem 3vw;
+    }
+
+    /* Our Result Section ====================*/
+
+
+    .part3 {
+        background-size: cover;
+        padding-bottom: 3rem;
+        overflow: hidden;
+    }
+
+    .pent-hold {
+        display: flex;
+    }
+
+    .part3>p {
+        margin: 3rem 17vw;
+    }
+
+    .pent-parent {
+        margin: 2rem 2vw;
+    }
+
+    /* Contact Us ==================== */
+    .form {
+        width: var(--contact-input-width);
+    }
+
+    .contact-button {
+        margin: 3rem 4.5rem;
+    }
+
+    /* Footer =============================== */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/* Tablet media queries */
+@media (min-width: 374px) and (max-width: 768px) {
+    body {
+        
+    }
+
+    /* Banner Section ======================*/
+    .banner {
+        padding-bottom: 5rem;
+        background-position: left 58% bottom 0px;
+    }
+
+    header {
+        margin: 1rem 3rem;
+    }
+
+    .banner-head {
+        margin: 0px;
+        margin-top: 17rem;
+    }
+
+    .first-but {
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .part1 {
+        padding: 0px 5vw;
+    }
+
+    nav {
+        display: inline-flex;
+        margin-top: 0.5rem;
+    }
+
+    /* What we Do Section ===================*/
+
+    .part2 {
+        padding: 5rem 4rem;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .icon-hold {
+        padding: 0px 6vw;
+    }
+
+    .icon {
+        padding-top: 5rem;
+    }
+
+    /* Our Result Section =====================*/
+    .part3 {
+        /* padding: 0 1vw; */
+        background-position: left 50% top 0px;
+        background-size: cover;
+    }
+
+    .part3>p {
+        margin: 3rem 6vw;
+    }
+
+    .result-head {
+        margin-top: 1rem;
+    }
+
+    .pent-hold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* padding: 0 4vw; */
+    }
+
+    .pent-parent {
+        margin: 2rem 2vw;
+    }
+
+    /* Contact Us =================== */
+    .form {
+        width: var(--contact-input-width);
+    }
+
+    .contact-button {
+        margin: 3rem 4.5rem;
+    }
+
+    /* Footer =============================== */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+}
