@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 # ALX IMPLEMENT A DESIGN FROM SCRATCH
 
 ## 
+=======
+HEADPHONE
+>>>>>>> 0e9dd35106278c70ce2911629e9cc5e814f86ffd
