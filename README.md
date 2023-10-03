@@ -1,6 +1,4 @@
 # ALX IMPLEMENT A DESIGN FROM SCRATCH
-
-<<<<<<< HEAD
 ## TABLE OF CONTENT
 - [Overview](#overview)
 - [Task 0](#task-0)
@@ -130,6 +128,3 @@ These materials helped me get a good understanding of the flexbox layout especia
 
 ## Author
 Like what you read? You can also connect with me on Twitter - [@obika_viola](https://www.twitter.com/obika_viola)
-=======
-## HEADPHONE
->>>>>>> 63feb1efc0a52f35f31cd755ccd209616d04840c
