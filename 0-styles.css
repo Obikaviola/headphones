@@ -239,6 +239,15 @@ nav {
     display: none;
 }
 
+
+a:hover {
+    color: #FF6565;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
 .part1 {
     padding: 0px 0.3rem;
 }

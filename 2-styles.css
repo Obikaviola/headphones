@@ -237,6 +237,16 @@ nav>a {
     margin-left: 2rem;
 }
 
+
+a:hover {
+    color: #FF6565;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+
 nav {
     display: none;
 }
